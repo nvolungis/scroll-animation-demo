@@ -1,0 +1,173 @@
+/*reset*/
+html, body,
+h1, h2, h3, h4, h5, h6 {
+	margin:0;
+	padding:0;
+}
+
+ul, li {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:arial,sans-serif;
+}
+
+#canvas {
+	position:fixed;
+	top:0;
+	left:0;
+}
+
+#status {
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	opacity:1;
+	background:#000;
+	width:0;
+	-webkit-transition:opacity .5s ease-in-out;
+	-moz-transition:opacity .5s ease-in-out;
+	z-index:100;
+}
+
+.hidden {
+	opacity:0 !important;
+}
+
+#spacer {
+	position:absolute;
+	top:0;
+	width:1px;
+}
+
+#progressbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 0;
+  background: #d85432;
+  z-index: 2;
+  opacity: 0;
+}
+
+#progressbar.active {
+  opacity:1;
+}
+
+#wrapper {
+	max-width:1000px;
+	margin:100px auto 0;
+	padding:20px;
+	position:relative;
+	-webkit-transition:opacity .2s ease-in-out;
+	-moz-transition:opacity .2s ease-in-out;
+	transition: opacity .2s ease-in-out;
+}
+
+#wrapper section {
+  position: fixed;
+  top: 50%;
+  left: 0; 
+  opacity: 0;
+/*   background: rgba(255,255,255,.6); */
+  height: 400px;
+  margin-top: -200px;
+  width: 100%;
+  text-align:center;
+}
+
+#wrapper section.active {
+  opacity: 1;
+}
+
+.scrollable {
+  -webkit-transition:opacity .2s ease-in-out;
+	-moz-transition:opacity .2s ease-in-out;
+	transition:opacity .2s ease-in-out;
+}
+
+section#four {
+  background:url(assets/images/end_background.jpg) 0 0 no-repeat;
+  background-size: cover;
+  top: 0;
+  height: 100%;
+  margin-top: 0;
+  -webkit-transition:opacity .5s ease-in-out;
+	-moz-transition:opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
+}
+
+section#four img{
+  max-width: 100%;
+}
+
+section#scroll {
+  background:none;
+  margin-top:0;
+  bottom:5px;
+  top: auto;
+  height: auto;
+  color:#fff;
+}
+
+#were-ctp {
+  display:block;
+  margin-top: 72px;
+}
+
+#help {
+  display:block;
+  margin-top: 24px;
+}
+
+#band {
+  display:block;
+  margin-top: 64px;
+}
+
+#band img{
+  max-width: none;
+  width: 100%;
+}
+
+#know {
+  display: block;
+  margin-top: 75px;
+}
+
+#skip {
+  position: fixed;
+  right: 20px;
+  bottom: 0;
+  width: 100px;
+  height: 50px;
+  z-index:2;
+  opacity: 0;
+  cursor:pointer;
+}
+
+#skip.active {
+  opacity: 1;
+}
+
+#topbar {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  z-index: 2;
+}
+
+#logo {
+  float:left;
+  margin-left:20px;
+}
+
+#menu {
+  float: right;
+  margin-right: 20px;
+}
